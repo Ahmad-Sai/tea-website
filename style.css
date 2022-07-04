@@ -1,96 +1,233 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     font-family: Helvetica;
-    font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
+
     text-align: center;
 }
 
-h2{
-    font-size: 35px;
-    margin-top: 3px;
-    margin-bottom: 5px;
+/* nav bar */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
-.container{
+
+.flex-container-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 69px;
     border-bottom: 1px solid seashell;
-    align-items: center;
-    justify-content: space-between;
+    overflow: hidden;
 }
 
-#logo img{
-    margin-left: 10px;
-    height: 50px;
-}
-
-#list ul{
+.box-nav ul{
     display: flex;
-    list-style: none;
     text-decoration: underline;
+    list-style: none;
 }
 
-#list li{
-    margin-right: 20px;
+.box-nav ul li{
+    margin-right: 15px;
 }
 
-.jumbotron{
+.box-nav img{
+    height: 50px;
+    margin-left: 10px;
+}
+
+/* intro section */
+#intro{
     display: flex;
     justify-content: center;
-}
-
-.mission{
-    display: flex;
-    background-image: url("img-mission-background.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    width: 100%;
     height: 700px;
-    width: 90.5%;
-    align-items: center;
-    justify-content: center;
+    background-color: black;
 }
-.intro{
+
+.flex-container-mission{
+    width: 90%;
+    background-image: url('img-mission-background.jpg');
+    background-repeat: no-repeat;
+    /*background-attachment: fixed; */
+    /*background-position: center;  */
+    background-size: cover; 
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-mission{
+    opacity: 0.9;
     width: 1200px;
     height: 100px;
-}
-
-
-.monthly-tea{
     display: flex;
     justify-content: center;
-    height: 200px;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.box-mission .content h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.box-mission .content h4{
+    font-size: 22px;
 }
 
 
-.tea-container{
+/* tea section */
+
+#tea-of-month{
     display: flex;
     justify-content: center;
-    
+    width: 100%;
 }
-.teas{
+
+.flex-container-tea{
     display: flex;
-    justify-content: space-around;
-    width: 1000px;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    width: 1000px;
 }
 
-.tea-box{
-    margin-bottom: 20px;
+.box-tea{
+    margin: 15px;
 }
 
-.teas img{
-    width: 300px;
+#tea-of-month img{
     height: 200px;
+    width: 300px;
     margin-bottom: 10px;
 }
 
+.tea-of-month-header{
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
 
-.locations{
-    width: 100%;
+.tea-of-month-header h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* location section */
+
+#location{
+    margin-top: 50px;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 500px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 90%;
+    background-image: url('img-locations-background.jpg');
+    background-repeat: no-repeat;
+    /*background-attachment: fixed; */
+    background-position: center;  
+    background-size: cover; 
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.flex-container-title, .box-title, .box-title h2{
+    background-color: transparent;
+}
+
+.box-title h2{
+    font-size: 50px;
+}
+
+.flex-container-location{
+    width: 90%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover; 
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-location{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.box-location h3{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.box-location h4{
+    font-size: 20px;
+    margin: 30px;
+    line-height: 3.5;
+}
+
+/* contact */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    opacity: 0.9;
+}
+
+.flex-container-contact{
+    line-height: 2;
+}
+
+.flex-container-contact h2{
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.flex-container-contact h4{
+    margin-bottom: 18px;
+}
+
+/* name */
+
+#name{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.9;   
+}
+
+.box-name {
+    margin: 10px;
+}
+
+
+.box-name h5{
+    font-size: 10px;
 }
